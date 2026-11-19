@@ -1,0 +1,30 @@
+# Secrets & Environment
+.env
+
+# Collected Device Data, Configs & Exports
+snapshots/*
+!snapshots/.gitkeep
+*.csv
+*.json
+!package.json
+
+# Firmware Images
+images/*
+!images/.gitkeep
+*.bin
+*.tar
+
+# TLS Certificates & Private Keys
+nginx/certs/*
+!nginx/certs/.gitkeep
+*.pem
+*.key
+*.crt
+
+# Database Volumes & Python Cache
+pgdata/
+postgres_data/
+__pycache__/
+*.py[cod]
+*.venv/
+.DS_Store
